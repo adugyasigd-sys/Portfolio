@@ -13,10 +13,11 @@
 </head>
 <body>
     <div id="bg-glow"></div>
+    <canvas id="particle-network"></canvas>
     
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">GDA<span>.</span>WEB</a>
+            <a href="#home" class="logo">GDA<span>.</span></a>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -25,9 +26,8 @@
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#cv" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -62,40 +62,18 @@
         </div>
     </section>
 
-    <section id="certifications" class="section">
+    <section class="section cv-section">
         <div class="container">
-            <h2 class="section-title reveal">Certifications</h2>
-            <div class="cert-card reveal">
-                <div class="cert-info">
-                    <h3>C1 Level Advanced Certificate</h3>
-                    <p class="cert-authority">EnglishScore | Approved by the British Council</p>
-                    <p>Demonstrated advanced proficiency in English, enabling effective communication in global professional environments and technical documentation.</p>
-                </div>
-                <div class="cert-image-placeholder">
-    <embed src="EnglishScore_Certificate.pdf" type="application/pdf" width="100%" height="100%" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="section">
-        <div class="container">
-            <h2 class="section-title reveal">Freelance Services</h2>
-            <div class="services-grid">
-                <div class="service-card reveal">
-                    <i class="fa-solid fa-keyboard"></i>
-                    <h3>Typing</h3>
-                    <p>Fast and accurate data entry and document transcription services.</p>
-                </div>
-                <div class="service-card reveal">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <h3>Proofreading</h3>
-                    <p>Detailed review of technical and creative documents for clarity and grammar.</p>
-                </div>
-                <div class="service-card reveal">
-                    <i class="fa-solid fa-pen-nib"></i>
-                    <h3>Copywriting</h3>
-                    <p>Creating focused, professional content tailored to your specific audience.</p>
+            <div class="cv-card reveal">
+                <div class="cv-content">
+                    <div class="cv-icon">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <h2>My Resume</h2>
+                    <p>Download my comprehensive CV to learn more about my professional background, education, and experience.</p>
+                    <a href="Adu_Gyasi_CV.pdf" download class="btn btn-primary">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
                 </div>
             </div>
         </div>
@@ -103,7 +81,10 @@
 
     <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title reveal">Technical Arsenal</h2>
+            <div class="section-header reveal">
+                <h2 class="section-title">Technical Arsenal</h2>
+                <p class="section-subtitle">Skills and technologies I use to build modern solutions</p>
+            </div>
             <div class="skills-grid">
                 <div class="skill-category reveal">
                     <h3>Frontend</h3>
@@ -120,7 +101,7 @@
                     </div>
                 </div>
                 <div class="skill-category reveal">
-                    <h3>Tools</h3>
+                    <h3>Tools & Platforms</h3>
                     <div class="skill-tags">
                         <span>Git</span>
                         <span>VS Code</span>
@@ -131,9 +112,63 @@
         </div>
     </section>
 
+    <section id="certificates" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <p class="section-subtitle">Professional credentials validating my expertise</p>
+            </div>
+            <div class="certificate-gallery">
+                <div class="cert-item reveal">
+                    <div class="cert-image-wrapper">
+                        <img src="ENG.png" alt="C1 Level Advanced Certificate">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                        <a href="./EnglishScore_Certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-pdf-link-overlay"></a>
+                    </div>
+                    <div class="cert-details">
+                        <h3>C1 Advanced English</h3>
+                        <p class="cert-issuer">EnglishScore | British Council</p>
+                        <p class="cert-description">Advanced proficiency in English communication and technical documentation.</p>
+                    </div>
+                </div>
+                <div class="cert-item reveal">
+                    <div class="cert-image-wrapper">
+                        <img src="20251128_194131.jpg" alt="Professional Achievement">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Professional Development</h3>
+                        <p class="cert-issuer">Achievements & Milestones</p>
+                        <p class="cert-description">Continuous learning and professional growth in my engineering journey.</p>
+                    </div>
+                </div>
+                <div class="cert-item reveal">
+                    <div class="cert-image-wrapper">
+                        <img src="20251128_195207.jpg" alt="Technical Skills">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Technical Excellence</h3>
+                        <p class="cert-issuer">Engineering & Development</p>
+                        <p class="cert-description">Demonstrated expertise in web development and software engineering practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title reveal">Initial Projects</h2>
+            <div class="section-header reveal">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Innovative solutions showcasing my development skills</p>
+            </div>
             <div class="project-grid">
                 <div class="project-card reveal">
                     <div class="project-content">
@@ -176,44 +211,33 @@
 
     <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title reveal">Get In Touch</h2>
-            <div class="contact-grid">
-                <div class="contact-info reveal">
-                    <div class="contact-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p>adugyasigd@gmail.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <p>+233 55 030 0138</p>
-                    </div>
-                </div>
-                <form id="contact-form" class="reveal">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                    <div id="form-feedback"></div>
-                </form>
+            <div class="section-header reveal">
+                <h2 class="section-title">Connect With Me</h2>
+                <p class="section-subtitle">Let's build something amazing together</p>
+            </div>
+            <div class="socials-container reveal">
+                <a href="mailto:adugyasigd@gmail.com" class="social-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>adugyasigd@gmail.com</p>
+                </a>
+                <a href="tel:+233206833741" class="social-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>WhatsApp</h3>
+                    <p>+233 20 683 3741</p>
+                </a>
+                <a href="https://www.linkedin.com/in/gyidie-adu-gyasi-88895538a" target="_blank" rel="noopener noreferrer" class="social-card">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Gyidie Adu Gyasi</p>
+                </a>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container footer-content">
-            <p>&copy; 2026 GDA.WEB | All Rights Reserved</p>
-            <div class="social-links">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-            <a href="#home" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+            <p>&copy; 2026 GDA | All Rights Reserved | Crafted with passion</p>
         </div>
     </footer>
 
